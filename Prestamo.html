@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="paloma.png" type="image/png">
+    <title>Cliente</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <section class="container">
+        <div id="cliente" class="row">
+            <h1 class="center-align">Datos Personales</h1>
+            <form action="procesar_solicitud.php" method="post">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label id="nombre"class="form-label"></label> 
+                        <input type="text"  placeholder="Nombre" class="form-control" aria-label="form-control-sm" required placeholder="Introduce tu nombre">
+                    </div>
+                    <div class="input-field col s12">
+                        <label id="nombre"class="form-label"></label> 
+                        <input type="text"  placeholder="Fecha de Nacimiento" class="form-control" aria-label="form-control-sm" required placeholder="Introduce tu nombre">
+                    </div>
+                    <div class="input-field col s12">
+                        <label id="nombre"class="form-label"></label> 
+                        <input type="text"  placeholder="Telefono" class="form-control" aria-label="form-control-sm" required placeholder="Introduce tu nombre">
+                    </div>
+                    <div class="input-field col s12">
+                        <label id="nombre"class="form-label"></label> 
+                        <input type="text"  placeholder="Dirección" class="form-control" aria-label="form-control-sm" required placeholder="Introduce tu nombre">
+                    </div>
+                    <div class="input-field col s12">
+                        <label id="nombre"class="form-label"></label> 
+                        <input type="text"  placeholder="Curp o RFC" class="form-control" aria-label="form-control-sm" required placeholder="Introduce tu nombre">
+                    </div>
+                    <div class="col s12 center-align">
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Enviar Solicitud</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const input = document.getElementById("nombre");
+        input.value = ""; 
+    });
+    </script>
+</body>
+</html>
